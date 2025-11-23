@@ -22,7 +22,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src="https://cdn.builder.io/api/v1/image/assets%2Fb38b36ed8d244fffadd179bb37229fcc%2F623bf500355d4f2bbc100b3d36d24461?format=webp&width=96" alt="Seminant logo" className="h-9 w-9 rounded-sm object-contain" loading="eager" fetchPriority="high" />
+          <img src="/favicon.png" alt="Seminant logo" className="h-9 w-9 rounded-sm object-contain" loading="eager" fetchPriority="high" />
           <span className="text-lg font-bold tracking-tight">Seminant Business Setup & Auditing</span>
         </Link>
 
