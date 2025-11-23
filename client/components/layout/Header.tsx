@@ -22,8 +22,16 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-background/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/favicon.png" alt="Seminant logo" className="h-9 w-9 rounded-sm object-contain" loading="eager" fetchPriority="high" />
-          <span className="text-lg font-bold tracking-tight">Seminant Business Setup & Auditing</span>
+          <img
+            src="/favicon.png"
+            alt="Seminant logo"
+            className="h-9 w-9 rounded-sm object-contain"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <span className="text-lg font-bold tracking-tight">
+            Seminant Business Setup & Auditing
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -113,15 +121,57 @@ export function Header() {
       {open && (
         <div className="border-t bg-white/95 px-4 py-3 md:hidden dark:bg-background">
           <div className="container mx-auto grid gap-2">
-            <Link to="/why-middle-east" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Why Middle East</Link>
-            <div className="rounded-md px-2 py-2 text-xs font-semibold uppercase text-muted-foreground">Sectors</div>
-            <Link to="/setup" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Business Setup</Link>
-            <Link to="/compliance" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Compliance</Link>
-            <Link to="/tax-legal" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Tax & Legal</Link>
-            <Link to="/ip" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Brand & IP</Link>
-            <Link to="/sectors" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Sectors Overview</Link>
-            <Link to="/services" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Services</Link>
-            <Link to="/blogs" className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent">Blogs</Link>
+            <Link
+              to="/why-middle-east"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Why Middle East
+            </Link>
+            <div className="rounded-md px-2 py-2 text-xs font-semibold uppercase text-muted-foreground">
+              Sectors
+            </div>
+            <Link
+              to="/setup"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Business Setup
+            </Link>
+            <Link
+              to="/compliance"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Compliance
+            </Link>
+            <Link
+              to="/tax-legal"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Tax & Legal
+            </Link>
+            <Link
+              to="/ip"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Brand & IP
+            </Link>
+            <Link
+              to="/sectors"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Sectors Overview
+            </Link>
+            <Link
+              to="/services"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Services
+            </Link>
+            <Link
+              to="/blogs"
+              className="rounded-md px-2 py-2 text-sm font-medium hover:bg-accent"
+            >
+              Blogs
+            </Link>
             <Button asChild size="sm" className="justify-self-start">
               <Link to="/contact">Contact Us</Link>
             </Button>
