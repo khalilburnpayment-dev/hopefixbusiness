@@ -138,7 +138,7 @@ export const BLOGS: BlogPost[] = [
     content: [
       {
         type: "p",
-        text: "The UAE has no shortage of free zones and logistics hubs. On paper they all look attractive, but the reality is each one plays a very different role in the country’s trade ecosystem.",
+        text: "The UAE has no shortage of free zones and logistics hubs. On paper they all look at.tractive, but the reality is each one plays a very different role in the country’s trade ecosystem.",
       },
       {
         type: "p",
@@ -385,7 +385,7 @@ export const BLOGS: BlogPost[] = [
     content: [
       {
         type: "p",
-        text: "For any company thinking about going public, finance isn’t just about “keeping the books.” It��s about proving to investors and regulators that you can run a disciplined, transparent operation. The first thing they’ll look at? How quickly and accurately you close your books each month.",
+        text: "For any company thinking about going public, finance isn’t just about “keeping the books.” It��s about proving to investors and regulators that you can run a disciplined, transparent operation. The first thing they’ll look at.? How quickly and accurately you close your books each month.",
       },
       {
         type: "p",
