@@ -385,7 +385,7 @@ export const BLOGS: BlogPost[] = [
     content: [
       {
         type: "p",
-        text: "For any company thinking about going public, finance isn’t just about “keeping the books.” It��s about proving to investors and regulators that you can run a disciplined, transparent operation. The first thing they’ll look at. How quickly and accurately you close your books each month.",
+        text: "For any company thinking about going public, finance isn’t just about “keeping the books.” It's about proving to investors and regulators that you can run a disciplined, transparent operation. The first thing they’ll look at. How quickly and accurately you close your books each month.",
       },
       {
         type: "p",
@@ -481,7 +481,7 @@ export const BLOGS: BlogPost[] = [
       { type: "h2", text: "Keep Your Story Straight" },
       {
         type: "p",
-        text: "This is something a lot of businesses overlook. It’s not just about registering a mark, it’s about showing consistency.",
+        text: "This is something a lot of businesses overlook. It's about showing consistency.",
       },
       {
         type: "p",
@@ -675,7 +675,7 @@ export const BLOGS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "It’s less about ‘Big Brother’ oversight and more about making sure you don’t lose sleep over someone forgetting a renewal.",
+        text: "It's about ‘Big Brother’ oversight and more about making sure you don’t lose sleep over someone forgetting a renewal.",
       },
       { type: "h2", text: "Building an Audit Trail Automatically" },
       {
@@ -697,7 +697,7 @@ export const BLOGS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "It’s not about replacing people — it’s about giving your team fewer excuses to miss a deadline.",
+        text: "It's about giving your team fewer excuses to miss a deadline.",
       },
       { type: "h2", text: "Final Thought" },
       {
