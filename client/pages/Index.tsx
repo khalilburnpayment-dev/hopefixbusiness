@@ -22,25 +22,32 @@ export default function Index() {
   const [hasClosedOnce, setHasClosedOnce] = useState(false);
   const [hasAutoPopped, setHasAutoPopped] = useState(false);
   const [hasClosedAutoPopup, setHasClosedAutoPopup] = useState(false);
+  const [shouldReopen, setShouldReopen] = useState(false);
 
   useEffect(() => {
     document.title = "Set up. Comply. Grow — Portscale";
     setShowContactPopup(true);
   }, []);
 
+  useEffect(() => {
+    if (!shouldReopen) return;
+
+    const timeoutId = setTimeout(() => {
+      setShowContactPopup(true);
+      setHasAutoPopped(true);
+      setShouldReopen(false);
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+  }, [shouldReopen]);
+
   const handleClosePopup = () => {
     setShowContactPopup(false);
 
     if (!hasClosedOnce && !hasAutoPopped && !hasClosedAutoPopup) {
       setHasClosedOnce(true);
-      const timeoutId = setTimeout(() => {
-        setShowContactPopup(true);
-        setHasAutoPopped(true);
-      }, 5000);
-      return () => clearTimeout(timeoutId);
-    }
-
-    if (hasAutoPopped && !hasClosedAutoPopup) {
+      setShouldReopen(true);
+    } else if (hasAutoPopped && !hasClosedAutoPopup) {
       setHasClosedAutoPopup(true);
     }
   };
