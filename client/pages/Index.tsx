@@ -101,7 +101,10 @@ export default function Index() {
                 <Link to="/services">Explore Automation Services</Link>
               </Button>
             </div>
-            <p className="mt-4 text-white/90">Prefer to talk? Call us at <span className="font-medium">+971 55 649 6873</span></p>
+            <p className="mt-4 text-white/90">
+              Prefer to talk? Call us at{" "}
+              <span className="font-medium">+971 55 649 6873</span>
+            </p>
           </m.div>
         </div>
       </section>
@@ -251,7 +254,10 @@ export default function Index() {
 
       {/* Why Middle East CTA under the Compare card */}
       <div className="mx-auto mt-4 flex max-w-6xl justify-start px-6 md:justify-end">
-        <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button
+          asChild
+          className="bg-primary text-primary-foreground hover:bg-primary/90"
+        >
           <Link to="/why-middle-east">Why Middle East</Link>
         </Button>
       </div>
@@ -283,7 +289,8 @@ export default function Index() {
       {/* Source stamp */}
       <section className="px-6 pb-8">
         <div className="mx-auto max-w-6xl text-xs text-muted-foreground">
-          All rules and regulations outlined are subject to change in accordance with updates or amendments issued by the government or authorities.
+          All rules and regulations outlined are subject to change in accordance
+          with updates or amendments issued by the government or authorities.
         </div>
       </section>
 
@@ -296,7 +303,8 @@ export default function Index() {
             We'll get back within one business day.
           </p>
           <p className="mt-3 text-sm font-medium">
-            Prefer a quick call? <span className="text-primary">+971 55 649 6873</span>
+            Prefer a quick call?{" "}
+            <span className="text-primary">+971 55 649 6873</span>
           </p>
           <ContactForm />
         </div>
