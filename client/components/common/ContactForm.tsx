@@ -1,27 +1,22 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  if (submitted) {
-    return (
-      <div className="mt-6 rounded-md border bg-green-50 p-4 text-sm text-green-800">
-        Thanks—your message has been sent.
-      </div>
-    );
-  }
-
   return (
     <form
       className="grid gap-3 sm:gap-4"
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
+      action="https://formspree.io/f/xqaybbkg"
+      method="POST"
     >
+      <div>
+        <label className="mb-1 block text-xs sm:text-sm font-medium">Name</label>
+        <Input
+          name="name"
+          required
+          placeholder="Your full name"
+        />
+      </div>
       <div>
         <label className="mb-1 block text-xs sm:text-sm font-medium">Email</label>
         <Input
@@ -33,7 +28,12 @@ export default function ContactForm() {
       </div>
       <div>
         <label className="mb-1 block text-xs sm:text-sm font-medium">Phone Number</label>
-        <Input name="phone" required placeholder="+971 55 649 6873" />
+        <Input
+          type="tel"
+          name="phone"
+          required
+          placeholder="Your phone number"
+        />
       </div>
       <div>
         <label className="mb-1 block text-xs sm:text-sm font-medium">Message</label>
