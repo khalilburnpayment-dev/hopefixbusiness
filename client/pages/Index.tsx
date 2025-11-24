@@ -36,7 +36,7 @@ export default function Index() {
       setShowContactPopup(true);
       setHasAutoPopped(true);
       setShouldReopen(false);
-    }, 5000);
+    }, 10000);
 
     return () => clearTimeout(timeoutId);
   }, [shouldReopen]);
