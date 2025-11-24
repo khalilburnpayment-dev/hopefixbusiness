@@ -10,15 +10,15 @@ export default function ContactForm() {
       method="POST"
     >
       <div>
-        <label className="mb-1 block text-xs sm:text-sm font-medium">Name</label>
-        <Input
-          name="name"
-          required
-          placeholder="Your full name"
-        />
+        <label className="mb-1 block text-xs sm:text-sm font-medium">
+          Name
+        </label>
+        <Input name="name" required placeholder="Your full name" />
       </div>
       <div>
-        <label className="mb-1 block text-xs sm:text-sm font-medium">Email</label>
+        <label className="mb-1 block text-xs sm:text-sm font-medium">
+          Email
+        </label>
         <Input
           type="email"
           name="email"
@@ -27,7 +27,9 @@ export default function ContactForm() {
         />
       </div>
       <div>
-        <label className="mb-1 block text-xs sm:text-sm font-medium">Phone Number</label>
+        <label className="mb-1 block text-xs sm:text-sm font-medium">
+          Phone Number
+        </label>
         <Input
           type="tel"
           name="phone"
@@ -36,7 +38,9 @@ export default function ContactForm() {
         />
       </div>
       <div>
-        <label className="mb-1 block text-xs sm:text-sm font-medium">Message</label>
+        <label className="mb-1 block text-xs sm:text-sm font-medium">
+          Message
+        </label>
         <Textarea
           name="message"
           required
