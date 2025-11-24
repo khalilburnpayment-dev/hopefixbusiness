@@ -47,7 +47,7 @@ export default function Index() {
 
   return (
     <div className="flex flex-col">
-      <ContactFormPopup isOpen={showContactPopup} onClose={() => setShowContactPopup(false)} />
+      <ContactFormPopup isOpen={showContactPopup} onClose={handleClosePopup} />
       {/* Hero */}
       <section className="relative isolate">
         <img
